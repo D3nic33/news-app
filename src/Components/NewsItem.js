@@ -9,7 +9,7 @@ const NewsItem = ({title, urlToImage, url, description, publishedAt}) => {
 
     return (
       <div>
-        {time}
+        { time }
       </div>
     )
   }
@@ -33,7 +33,7 @@ const NewsItem = ({title, urlToImage, url, description, publishedAt}) => {
         <img 
           src={urlToImage}
           alt={urlToImage}
-          className='rounded-md'
+          className='rounded-t-md'
         />
       </div>
       <div className='px-3'>
