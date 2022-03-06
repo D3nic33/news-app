@@ -14,19 +14,27 @@ const NewsList = (request) => {
   }, [request])
 
   return (
-    <div className='grid grid-cols-2 gap-10 w-11/12 mx-auto py-8'>
-      {articles.map((article, index) => {
-        return(
-          <NewsItem
-            key={index}
-            title = {article.title}
-            urlToImage = {article.urlToImage}
-            url = {article.url}
-            description = {article.description}
-            publishedAt = {article.publishedAt}
-          />
-        )
-      })}
+    <div>
+      {articles.length > 0  ? (
+        <div className='grid grid-cols-2 gap-10 w-11/12 mx-auto pb-8'>
+        {articles.map((article, index) => {
+          return(
+            <NewsItem
+              key={index}
+              title = {article.title}
+              urlToImage = {article.urlToImage}
+              url = {article.url}
+              description = {article.description}
+              publishedAt = {article.publishedAt}
+            />
+          )
+        })}
+        </div>
+        ) : (
+          <div className='flex justify-center font-semibold text-3xl'>
+            <h1>No news available</h1>
+          </div>
+        )}
     </div>
   )
 }
