@@ -31,7 +31,7 @@ const NewsList = (request) => {
         })}
         </div>
         ) : (
-          <div className='font-semibold text-2xl mx-auto'>
+          <div className='flex justify-center font-semibold text-3xl'>
             <h1>No news available</h1>
           </div>
         )}

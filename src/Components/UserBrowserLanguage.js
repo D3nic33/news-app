@@ -3,8 +3,6 @@ const UserBrowserLanguage = () => {
   var checkForCharacter = '-' 
   let countryCode;
   
-  console.log(userLang)
-
   if(!userLang.includes(checkForCharacter)){
     countryCode = userLang
   }
