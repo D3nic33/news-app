@@ -16,7 +16,7 @@ const NewsList = (request) => {
   return (
     <div>
       {articles.length > 0  ? (
-        <div className='grid grid-cols-2 gap-10 w-11/12 mx-auto pb-8'>
+        <div className='md:grid md:grid-cols-2 md:gap-10 w-11/12 mx-auto pb-8'>
         {articles.map((article, index) => {
           return(
             <NewsItem
