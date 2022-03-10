@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
+import SearchBar from './SearchBar'
+
 const navigation = [
   { name: 'Sports', href: "/category/sports" , colour: 'bg-blue-200' },
   { name: 'Business', href: "/category/business" , colour: 'bg-red-200' },
@@ -43,24 +45,28 @@ export default function Example() {
                     <h1 className='text-3xl font-bold'>News App</h1>
                   </Link>
                 </div>
+                <div className="items-center hidden px-3 md:flex">
+                  <SearchBar />
+                </div>
                 <div className="hidden sm:flex sm:ml-6 items-center">
-                  <div>
-                    {navigation.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.href}
-                        className={`sm:px-3 lg:px-5 py-1 hover:${item.colour} font-semibold rounded-xl`}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className={`sm:px-3 lg:px-5 py-1 hover:${item.colour} font-semibold rounded-xl`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden shadow-md">
+            <div className="items-center py-3">
+              <SearchBar />
+            </div>
             <div className="flex flex-col">
               {navigation.map((item) => (
                 <Link
