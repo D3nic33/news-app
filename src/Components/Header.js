@@ -53,7 +53,7 @@ export default function Example() {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={`sm:px-3 lg:px-5 py-1 hover:${item.colour} font-semibold rounded-xl`}
+                      className={`sm:px-3 lg:px-5 hover:${item.colour} font-semibold rounded-xl`}
                     >
                       {item.name}
                     </Link>
@@ -72,7 +72,7 @@ export default function Example() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`px-5 py-1 hover:${item.colour} font-semibold rounded-xl`}
+                  className={`px-5 hover:${item.colour} font-semibold rounded-xl`}
                 >
                   {item.name}
                 </Link>
