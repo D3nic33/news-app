@@ -28,7 +28,7 @@ const NewsItem = ({title, urlToImage, url, description, publishedAt}) => {
   }
 
   return (
-    <div className='border border-gray-300 rounded-md'>
+    <div className='border border-gray-300 rounded-md my-5 md:my-0'>
       <div>
         <img 
           src={urlToImage}
