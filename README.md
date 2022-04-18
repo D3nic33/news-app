@@ -1,5 +1,7 @@
 # News App
+![alt text](https://github.com/D3nic33/portfolio/blob/main/src/Assets/news-app-img.png)
 
+This app shows the recent news, based on the browser language instead of location.
 When you download or clone this project, the following steps need to taken in order to use the news app
 
 ## API key
