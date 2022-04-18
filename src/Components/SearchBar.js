@@ -17,7 +17,7 @@ class Search extends React.Component{
 
   render(){
     return(
-      <div className='px-5 items-center w-full'>
+      <div className='px-5 items-center xl:w-full xl:visible block'>
         <form className='flex w-full' onSubmit={this.handleSubmit.bind(this)}>
           <input
             type="text" 
