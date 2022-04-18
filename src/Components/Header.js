@@ -67,12 +67,12 @@ export default function Example() {
             <div className="items-center py-3">
               <SearchBar />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col ml-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`px-5 hover:${item.colour} font-semibold rounded-xl`}
+                  className={`px-2 py-1 hover:${item.colour} hover:w-2/5 font-semibold rounded-xl`}
                 >
                   {item.name}
                 </Link>
